@@ -18,7 +18,7 @@ public class UserController {
         return user;
     }
 
-    @RequestMapping(value="user")
+   /* @RequestMapping(value="user2")
     public User editUser(){
         User user = new User();
         user.setName("Laura");
@@ -46,5 +46,5 @@ public class UserController {
         user.setEmail("laura@gmail.com");
         user.setTelephone("123456");
         return user;
-    }
+    }*/
 }
