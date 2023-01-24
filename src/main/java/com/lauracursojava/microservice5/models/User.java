@@ -2,24 +2,27 @@ package com.lauracursojava.microservice5.models;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name ="users")
+@ToString
 public class User {
 
-
+    @Id
     @Getter @Setter @Column(name= "id")
     private Long id;
 
     @Getter @Setter @Column(name= "name")
     private String name;
 
-    @Getter @Setter @Column(name= "lastName")
-    private String lastName;
+    @Getter @Setter @Column(name= "last_name")
+    private String last_name;
 
     @Getter @Setter @Column(name= "email")
     private String email;
